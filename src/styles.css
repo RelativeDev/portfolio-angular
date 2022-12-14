@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Estilo aplicado na div que representa o card que fica a apresentação da HOME*/
+.content-card {
+    animation: slide 1.2s;
+    background-image: url(./assets/img/gif2.gif);
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-position: bottom;
+    background-position: 0px 0px 300px;
+    border-left: 3px solid #a600ff;
+    border-right: 3px solid #a600ff;
+    width: 71%;
+    height: 75%;
+    position: absolute;
+    left: 17%;
+    top: 100px;
+    right: 10px;
+    box-shadow: inset 200px 21px 194px 100px rgb(0, 0, 0);
+    z-index: 2;
+    margin-top: 10px;
+}
+
+/*Estilo aplicado as outros cards que aparecem ao navegar na barra de navegação principal*/
+.novo {
+    animation: slide 1.2s;
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-position: bottom;
+    background-position: 0px 0px 300px;
+    border-left: 3px solid #a600ff;
+    border-right: 3px solid #a600ff;
+    width: 71%;
+    height: 75%;
+    position: absolute;
+    left: 17%;
+    top: 100px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    margin-top: 10px;
+    color: #a600ff;
+}
+
+/*mudança da fonte para os paragrafos que falam sobre min*/
+.novo p {
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    z-index: 10000;
+}
+
+/*alteração para os titulos dos textos que falam sobre min*/
+.novo h1 {
+    margin: 15px;
+    font-size: 40px;
+}
+
+/*corpo do texto, estilo*/
+body {
+    background-image: url(../src/assets/img/gif9.gif);
+    background-size: 100%;
+    background-position: center center;
+    font-family: 'Teko', sans-serif;
+    background-color: #272b23;
+    color: #00e1ff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/*corpo do texto com um tipo de box-shadow para escurecer a tela e as letras*/
+body::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-size: 4px;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4) 1px,
+            transparent 1px,
+            transparent 2px);
+    opacity: .2;
+    z-index: 3;
+}
+
+/*estilo do titulo inicial da Home*/
+.greetings-title {
+    padding: 160px 10px 160px 60px;
+    line-height: 70px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+/*div de cada linha do texto de apresentação*/
+#linha1 {
+    /* background-color: rgba(0, 0, 0, 0.7);*/
+    width: 55px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 65px;
+    line-height: 65px;
+}
+
+#linha2 {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    border-radius: 20px;
+    /*width: 515px;*/
+    margin-top: 1px;
+    width: 600px;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+#linha3 {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    border-radius: 20px;
+    width: 600px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 65px;
+    line-height: 55px;
+}
+
+.greetings-title span {
+    color: #a600ff;
+}
+
+/*estilo para a barra de bootstrap*/
+#pills-contact-tab {
+    animation: opacity 1.5s;
+    background: rgba(0, 0, 0, 0);
+    color: #00e1ff;
+    border-radius: 0px;
+}
+
+/*estilo para a barra de bootstrap*/
+#pills-About-tab {
+    animation: opacity 1.5s;
+    background: rgba(0, 0, 0, 0);
+    color: #00e1ff;
+}
+
+#pills-profile-tab {
+    animation: opacity 1.5s;
+    background: rgba(0, 0, 0, 0);
+    color: #00e1ff;
+}
+
+/*estilo para a barra de bootstrap*/
+#pills-portfolio-tab {
+    animation: opacity 1.5s;
+    background: rgba(0, 0, 0, 0);
+    color: #00e1ff;
+}
+
+#pills-portfolio-tab:hover {
+    color: #a600ff;
+}
+
+#pills-profile-tab:hover {
+    color: #a600ff;
+}
+
+#pills-About-tab:hover {
+    color: #a600ff;
+}
+
+#pills-contact-tab:hover {
+    color: #a600ff;
+}
+
+/*estilo para a barra de bootstrap*/
+#pills-home-tab:hover {
+    color: #a600ff;
+}
+
+#pills-home-tab {
+    padding-bottom: 0px;
+    animation: opacity 1.4s;
+    background: rgba(0, 0, 0, 0);
+    color: #00e1ff;
+    border-radius: 0px;
+    /*border-left: 3px solid #a600ff;*/
+    border-bottom: 3px solid #a600ff;
+}
+
+/*estilo para a barra de bootstrap*/
+#pills-tab li {
+    margin-right: 65px;
+}
+
+#pills-tab {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: center;
+    padding: 0px 40px;
+    margin-top: 22px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*animação para o site usando css*/
+@keyframes slide {
+    0% {
+        transform: translateX(calc(100vw - 200px));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*animação para o site usando css*/
+@keyframes opacity {
+    0% {
+        transform: translateX(calc(100px - 100vw));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*animação para o site usando css*/
+@keyframes up {
+    0% {
+        transform: translateX(calc(100vw - 100px));
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*links para contato do canto esquerdo da tela*/
+#git {
+    animation: up 1s;
+    border-left: 2px solid #a600ff;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 150px;
+    width: 50px;
+    height: 190px;
+}
+
+/*links para contato do canto esquerdo da tela, estilo*/
+.fa-brands {
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+/*mudança de cor*/
+a i {
+    color: #00e1ff;
+}
+
+/*mudança de cor*/
+a i:hover {
+    color: #a600ff;
+}
+
+/*links para contato do canto esquerdo da tela, estilo*/
+#form {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*links para contato do canto esquerdo da tela, estilo*/
+.form-group {
+    margin-top: 20px;
+}
+
+/*Estilo da parte do Contato*/
+#exampleFormControlTextarea1 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #00e1ff;
+}
+
+/*Estilo da parte do Contato*/
+#exampleFormControlInput1 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom: 2px solid #00e1ff;
+    border-radius: 0px;
+}
+
+/*Estilo da parte do Contato*/
+#name1 {
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    border-style: none;
+    border-bottom: 2px solid #00e1ff;
+    border-radius: 0px;
+}
+
+#modal :h1 {
+    color: #00e1ff
+}
+
+/*Estilo da parte do Contato*/
+#name2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    border-style: none;
+    border-bottom: 2px solid #00e1ff;
+    border-radius: 0px;
+
+}
+
+/*Estilo da parte do Contato*/
+.col {
+    margin-top: 20px;
+}

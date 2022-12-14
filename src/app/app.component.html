@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Gomes Peixoto</title>
+
+</head>
+
+<body>
+  <!--Abaixo está a barra de navegação trazida do bootstrap-->
+  <nav id="nav1">
+    <ul class="nav nav-pills ml-auto navbar-fixed-top" id="pills-tab" role="tablist">
+      <li class="nav-item " role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-About-tab" data-bs-toggle="pill" data-bs-target="#pills-About" type="button"
+          role="tab" aria-controls="pills-About" aria-selected="false">About</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-portfolio-tab" data-bs-toggle="pill" data-bs-target="#pills-portfolio"
+          type="button" role="tab" aria-controls="pills-portfolio" aria-selected="false">Portfolio</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div id="modal" class="greetings content-card">
+        <!--apresentação utilizada na Home do site-->
+        <div class="greetings-title">
+          <h1 id="linha1"> Hi </h1>
+          <h1 id="linha2"> My Name is <br> <span>Pedro Gomes</span> </h1>
+          <h1 id="linha3"> I am a Software Engineer </h1>
+        </div>
+      </div>
+    </div>
+    <!--Apresentação sobre a minha pessoa-->
+    <div class="tab-pane fade" id="pills-About" role="tabpanel" aria-labelledby="pills-About-tab">
+      <div id="modal" class="greetings novo">
+        <h1 style="color:#00e1ff ;">Sobre min</h1>
+        <p>Olá, me chamo Pedro Gomes, tenho 21 anos, resido na capital do Ceará (Fortaleza), atualmente estou cursando
+          Engenharia de Software na Universidade Internacional,
+          antes de iniciar no mundo da programação, tranquei minha outra faculdade no quinto semestre de bacharelado em
+          Física pela UFC.<br>
+          Meus hobbies são diversos, sempre fui apaixonado por códigos, física, jogos e também sempre gostei de tocar
+          piano.
+          Gosto bastante de assistir filmes e séries, tendo como filme favorito interestelar.<br>
+          Planejo me especializar em back-end e machine learning, as quais estão sendo minhas área de interesse
+          atualmente.
+
+        </p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div id="modal" class="greetings novo">
+        <!--Mais sobre minha formação e idiomas-->
+        <h1 style="color:#00e1ff ;">Formação e Idiomas</h1>
+        <p>Ensino Médio completo.<br>
+          Cursando Engenharia de Software - Uninter<br>
+          Bacharelado em Física - UFC - trancado<br>
+          Português - Brasileiro - Idioma materno<br>
+          Ingles - reading - Avançado<br>
+          Ingles - Speak - Intermediário<br>
+          Ingles - listening - Intermediário
+        </p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-portfolio" role="tabpanel" aria-labelledby="pills-portfolio-tab">
+      <div id="modal" class="greetings novo">
+        <h1 style="color:#00e1ff ;">Portfólio</h1>
+        <p>Projetos de Java com Spring Boot / JPA - Hibernate / SQL / JavaFX / Back-End.
+          <a style="color:#a600ff ;" href="https://github.com/Witsu123">https://github.com/Witsu123</a>
+        </p>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div id="modal" class="greetings novo">
+        <form id="form">
+          <div class="form-group">
+            <div class="col">
+              <label for="exampleFormControlTextarea1">Nome</label>
+              <input type="text" class="form-control" id="name1" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="name2" placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea maxlength="800" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" style="background-color:  #00e1ff; color: #a600ff; font-size: 22px; margin-top: 20px;"
+            class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Links para o github, linkedin e instagram utilizando icones-->
+  <nav id="git">
+    <a href="https://github.com/Witsu123" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+    <a href="https://www.linkedin.com/in/pedro-gomes-peixoto-b3418811b/" target="_blank"><i
+        class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <a href="https://www.instagram.com/pedro.g.peixoto/" target="_blank"><i
+        class="fa-brands fa-instagram fa-2xl"></i></a>
+  </nav>
+
+</body>
+
+</html>
